@@ -44,7 +44,7 @@
             max-width: 900px;
             margin: auto;
         }
-        .services, .contact, .enquiry-form {
+        .services, .contact, .enquiry-form, .about {
             margin-bottom: 2rem;
         }
         h2 {
@@ -70,6 +70,23 @@
             font-size: 2rem;
             margin-bottom: 0.5rem;
             color: #0d6efd;
+        }
+        .enquiry-button {
+            display: inline-block;
+            background: #0d6efd;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+            margin-bottom: 1.5rem;
+            margin-right: 1rem;
+        }
+        .enquiry-button:hover {
+            background: #084ec1;
         }
         form input, form textarea {
             width: 100%;
@@ -120,7 +137,7 @@
 </head>
 <body>
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/CSC_Logo.svg/512px-CSC_Logo.svg.png" alt="CSC Logo">
+        <img src="https://csc.gov.in/assets/images/logo.png" alt="CSC Logo">
         <h1>Home Service CSC Center</h1>
         <p>FCI Chowk, Abadganj, Daltonganj</p>
         <p><strong>CSC ID:</strong> 464737460014</p>
@@ -130,9 +147,13 @@
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
         <a href="#enquiry">Enquiry</a>
+        <a href="#about">About</a>
     </nav>
 
     <div class="container">
+        <a class="enquiry-button" href="#enquiry">📩 Make an Enquiry</a>
+        <a class="enquiry-button" href="#about">ℹ️ About Us</a>
+
         <section class="services" id="services">
             <h2>Our Services</h2>
             <div class="services-grid">
@@ -172,6 +193,15 @@
                 <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
                 <button type="submit">Submit</button>
             </form>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Home Service CSC – Digital Services at Your Doorstep!</p>
+            <p>At Home Service CSC, we believe that convenience and access to government services should be available from the comfort of your home. That’s why we offer all major digital and government-related services right at your doorstep.</p>
+            <p>From Aadhar card assistance, PAN card application, online form filling, electricity/water bill payments, bank-related work, and various government schemes — we bring everything to your home so you don't need to stand in long queues.</p>
+            <p>We are committed to trusted service, transparency, and customer satisfaction. With just a call or message, your work gets done — quickly and reliably.</p>
+            <p><strong>Digital India, at your home!</strong></p>
         </section>
     </div>
 
